@@ -1,0 +1,165 @@
+/*
+selecteur_css{
+	propriete1: valeur1;
+	propriete2: valeur2;
+}
+*/
+
+/* selecteur css => tag*/
+body{
+	background-color: #CCCCCC;
+}
+
+/*selecteur css => id */
+#wrapper{
+	width:545px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFFFFF;
+}
+
+/*selecteur css => tag */
+header{
+	height:265px;
+	background-image: url('../img/header_bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top:65px;
+	border-bottom:2px solid #72aa21;
+	box-sizing:border-box;
+}
+
+#logo{
+	width:155px;
+	height:67px;
+	background-image: url('../img/logo.png');
+	margin-left:25px;
+}
+
+/* header h2 => un h2 qui a un ancetre header*/
+header h2{
+	color:#919191;
+	font-family: arial; /*changement de police*/
+	margin-left: 40px;
+	margin-top: -8px;
+	line-height: 15px; /*hauteur de l'interlignage*/
+}
+
+/*selecteur css => class */
+.petit{
+	font-size: 12px; /* taille de la police */
+	text-transform: lowercase; /*met le texte en minuscule */
+}
+
+nav ul{
+	margin: 0;
+	padding:0;
+
+
+	/*supprime les puces*/
+}
+
+nav ul li{
+	display: inline-block;
+	background-color: #72aa21;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	*/
+	padding:2px 10px;/* top/bottom et left/right*/
+	/*padding:5px 10px 5px 10px;  top right bottom left*/
+}
+
+nav ul li a{
+	color:#FFFFFF;
+	font-family: arial;
+	text-decoration: none; /*supprime le souligné*/
+	font-size:14px;
+}
+
+header nav{
+	margin-left:250px;
+	margin-top:83px;
+}
+
+#main_left{
+	width:200px;
+	float: left;
+	box-sizing:border-box;
+	padding:10px;
+}
+
+#main_right{
+	width:345px;
+	float:right;
+	box-sizing:border-box;
+	padding:10px;
+}
+
+.clearfix:after{
+	content: '.';
+	width:0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear:both;
+}
+
+#description img{
+	float:left;
+	width:113px;
+}
+
+/*un paragraphe qui est dans un element qui a une id=description*/
+#description p{
+	float: right;
+	width:62%;
+	margin-top:0;
+	margin-left: 10px;
+}
+
+#main h2{
+	color:#ffb900;
+	font-family: arial;
+}
+
+#main p{
+	font-family: arial;
+	color:#88888a;
+	font-size:12px;
+}
+
+.vert{
+	color:#6fa414;
+}
+
+.gras{
+	font-weight:bold;
+}
+
+.orange{
+	color:#ffb900;
+}
+
+.readmore a{
+	color:#ffb900;
+	text-decoration: none;
+	font-family: arial;
+	font-size:14px;
+}
+
+/*survol du lien */
+.readmore a:hover{
+	text-decoration: underline; /*souligné*/
+}
+
+/* modifier la taille du br */
+#main br{
+   display: block;
+   margin: 2px 0;
+}
+
